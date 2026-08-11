@@ -1,4 +1,4 @@
-
+```javascript
 const questions = [
     {
         question: "1. Which keyword is used to create a class in Java?",
@@ -152,17 +152,27 @@ function showResult() {
     document.getElementById("message").textContent = message;
 }
 
+function startQuiz() {
+
+    document.getElementById("startPage").style.display = "none";
+
+    document.getElementById("quiz").style.display = "block";
+
+    currentQuestion = 0;
+    score = 0;
+    selectedAnswer = null;
+
+    loadQuestion();
+}
+
 function restartQuiz() {
 
     currentQuestion = 0;
     score = 0;
     selectedAnswer = null;
 
-    document.getElementById("quiz").style.display = "block";
-
     document.getElementById("result").style.display = "none";
 
-    loadQuestion();
+    document.getElementById("startPage").style.display = "block";
 }
-
-loadQuestion();
+```
