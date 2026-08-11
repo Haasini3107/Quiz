@@ -1,4 +1,4 @@
-
+   javascript
 const questions = [
     {
         question: "1. Which keyword is used to create a class in Java?",
@@ -137,4 +137,3 @@ function restartQuiz() {
     document.getElementById("result").style.display = "none";
     document.getElementById("startPage").style.display = "block";
 }
-
