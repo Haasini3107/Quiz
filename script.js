@@ -1,4 +1,4 @@
-javascript
+
 const questions = [
     {
         question: "1. Which keyword is used to create a class in Java?",
