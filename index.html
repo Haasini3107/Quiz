@@ -1,4 +1,4 @@
-html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +7,27 @@ html
     <title>Java Quiz Application</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="quiz-container">
 
-    <h1>JAVA QUIZ APPLICATION</h1>
+    <!-- Starting Page -->
+    <div id="startPage" class="start-page">
+        <h1>JAVA QUIZ APPLICATION</h1>
 
-    <div id="quiz">
+        <p>Test your basic Java knowledge!</p>
+
+        <p class="quiz-info">5 Questions • Multiple Choice</p>
+
+        <button id="startBtn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+
+    <!-- Quiz Page -->
+    <div id="quiz" style="display: none;">
+
+        <h1>JAVA QUIZ APPLICATION</h1>
 
         <div class="question-box">
             <h2 id="question"></h2>
@@ -24,17 +38,24 @@ html
 
     </div>
 
+
+    <!-- Result Page -->
     <div id="result" class="result-box" style="display: none;">
+
         <h2>RESULT</h2>
+
         <p id="score"></p>
         <p id="percentage"></p>
+
         <h3 id="message"></h3>
 
         <button onclick="restartQuiz()">Try Again</button>
+
     </div>
 
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
